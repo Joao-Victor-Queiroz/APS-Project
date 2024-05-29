@@ -45,5 +45,5 @@ Baixe e instale o XAMPP:
 - Configurar o Projeto
 
 1. Clone este repositório:
-   git bash
+   ``` bash
    git clone https://github.com/Joao-Victor-Queiroz/APS-Project
