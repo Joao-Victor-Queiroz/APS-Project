@@ -1,0 +1,142 @@
+
+
+body{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Anybody", sans-serif;
+
+}
+
+.login-site{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-site{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    width: 380px;
+    height: 280px;
+}
+.logo-site img{
+    width: 150px;
+    height: 200px;
+  
+}
+.titulo-logo{
+    font-style: italic;
+    color: white;
+    font-size: 45px;
+    margin-top: 5px;
+}
+
+
+.formulario-login{
+    font-weight: 400;
+    margin-top: 20px;
+   
+}
+
+.formulario-login h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.form-cadastro_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.campo-formulario{
+    margin-top:15px;
+}
+
+.campo-formulario input{
+    width: 400px;
+    height: 44px;
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 8px;
+}
+
+.campo-formulario label, .campo-formulario input{
+    display: block;
+    /*Quebra o label para ficar em cima do campo*/
+}
+
+/*.login-formas{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 20px;
+}*/
+
+.secao-login{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 20px;
+    
+}
+
+.login-icon-1{
+    background-color: #FF0000;
+    text-align: center;
+}
+
+.login-icon-2{
+    background-color: #2400FF;
+    text-align: center;
+}
+
+.login-icon-3{
+    background-color: #151515;
+    text-align: center;
+}
+
+.login-icon-1, .login-icon-2, .login-icon-3{
+    width: 120px;
+    border-radius: 5px;
+}
+
+.login-icon-1 img, .login-icon-2 img, .login-icon-3 img{
+    height: 33px;
+    width: 33px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.button-login button{
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: var(--bg-sitecolor);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    width: 240px;
+    height: 40px;
+}
+.redirecionar-cadastro{
+    margin-top: 15px;
+}
+
+.redirecionar-cadastro .link-cadastrar{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.link-cadastrar:hover{
+    text-decoration: underline;
+}
+
+.link-cadastrar:visited{
+    color:var(--bg-sitecolor);
+}

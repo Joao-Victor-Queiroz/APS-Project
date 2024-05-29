@@ -1,0 +1,47 @@
+body {
+    font-size: 16px; /* Base font-size para rem */
+}
+
+@media only screen and (max-width: 480px){
+    .login-site{
+        margin-top: 40px;
+    }
+
+    .logo-site {
+        width: 100%;
+        height: auto;
+        
+    }
+    .logo-site img {
+        width: 80px;
+        height: auto;
+    }
+
+    .titulo-logo{
+        font-size: 35px;
+    }
+
+    .campo-formulario{
+        margin-top: 12px;
+    }
+    
+    .campo-formulario input{
+        width: 300px;
+    }
+
+    .campo-formulario label{
+        font-size: 14px;
+    }
+
+    .secao-login{
+        width: 300px;
+    }
+
+    .login-icon-1, .login-icon-2, .login-icon-3{
+        width: 90px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px){
+   
+}

@@ -1,0 +1,74 @@
+
+body{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+     font-family: var(--font-dm-anybody);
+}
+
+
+
+.administrador_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+
+}
+.administrador_section .user_page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    
+}
+.user_page img{
+    display: block;
+    width: 90px;
+    height: 90px;
+}
+.administrador_section h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.admin_functions_section .function_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.admin_functions_section .function_button img{
+    width: 80px;
+    height: 80px;
+
+}
+
+.admin_functions_section #add_product .function_button, .admin_functions_section #remove_product .function_button,
+.admin_functions_section #register_discount .function_button, .admin_functions_section #generate_report .function_button,
+.admin_functions_section #asses_stock .function_button{
+   margin-top: 10px;
+}
+
+.function_button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin_functions_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 760px;
+}
+

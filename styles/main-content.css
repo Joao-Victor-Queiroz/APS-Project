@@ -1,0 +1,201 @@
+/* Reset básico para margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Garantir que html e body não tenham margens ou preenchimentos */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevenir rolagem horizontal */
+}
+
+/* Ajustar header */
+header {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-sitecolor);
+}
+
+/* Ajustar body */
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: var(--font-dm-anybody);
+}
+
+/* Estilo para a navegação do header */
+header .header_navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* Permitir quebra de linha se necessário */
+    gap: 15px;
+    padding: 10px 15px;
+}
+
+header .header_navigation a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.header_navigation a:hover{
+    text-decoration: underline;
+}
+
+.header_navigation img {
+    width: 50px;
+    height: 60px;
+}
+
+.header_navigation .header_search {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 500px;
+    height: 48px;
+    width: 100%;
+    max-width: 500px;
+    flex-grow: 1;
+}
+
+.header_search img {
+    width: 25px;
+    height: 25px;
+}
+
+.header_search input {
+    background: transparent;
+    padding: 0px 12px; /* Ajustar padding para melhor visualização */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+    border: none;
+    flex-grow: 1; /* Faz o input crescer para preencher o espaço disponível */
+    min-width: 0; /* Necessário para evitar overflow no flexbox */
+}
+
+.header_navigation .shopping-cart, .header_navigation .my_profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+
+
+main .main_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+
+.categorias .categoria-title{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+
+.categorias .categoria_circles {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.categorias .categoria_circles .circle{
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.categoria_circles .circle a img{
+    width: 30px;
+    height: 30px;
+}
+.main_content .produtos_cards-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.main_content .produtos_cards-1 .categoria_1{
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produtos_cards-1 .title-categoria{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.produtos_cards-1 .categoria_1 #produto-categoria_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D9D9D9;
+    width: 200px;
+    height: 280px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+#produto-categoria_1 img{
+    width: 170px;
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+#produto-categoria_1  .infos_produto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100px;
+    padding: 0 10px;
+}
+
+.infos_produto .product_name, .infos_produto .product_price{
+    font-weight: 600;
+}
+
+.infos_produto .product_name{
+    text-decoration: none;
+    color: black;
+}
+
+.infos_produto .product_name:hover{
+    text-decoration: underline;
+}
