@@ -12,11 +12,11 @@ conta com um sistema simples de login, com diferenciação nos acessos entre usu
 
 **TECNOLOGIAS UTILIZADAS:**
 Front-End:
--HTML
--CSS
+- HTML
+- CSS
 Back-End:
--PHP
--phpmyadmin
+- PHP
+- phpmyadmin
 
 **PRE-REQUISITOS:**
 
