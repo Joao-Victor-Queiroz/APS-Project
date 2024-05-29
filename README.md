@@ -11,12 +11,12 @@ O projeto de codinome "Golden Wing" consiste em um site de gerenciamento de iten
 conta com um sistema simples de login, com diferenciação nos acessos entre usuários comuns e administrador.
 
 **TECNOLOGIAS UTILIZADAS:**
-Front-End:
-- HTML
-- CSS
-Back-End:
-- PHP
-- phpmyadmin
+- Front-End:
+HTML
+CSS
+- Back-End:
+PHP
+phpmyadmin
 
 **PRE-REQUISITOS:**
 
