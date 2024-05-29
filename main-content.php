@@ -18,12 +18,7 @@
                 <img src="./assets/search-icon.svg" alt="">
                 <input id="search_input" type="text" maxlength="800" placeholder="O que você está procurando hoje?">
             </div>
-            <div class="shopping-cart">
-                <a href="">
-                    <span class="my_cart">Meu carrinho</span>
-                    <img src="/assets/shopping-icon.svg" alt="">
-                </a>
-            </div>
+            
             <div class="my_profile">
             <?php
     session_start();
@@ -53,60 +48,6 @@
                 </div>
             </div>
             <div class="produtos_cards-1">
-                <span class="title-categoria">PRODUTOS</span>
-                <div class="categoria_1">
-                <?php
-// Conexão com o banco de dados
-$usuario = 'root';
-$senha = '';
-$database = 'goldenwing';
-$host= 'localhost';
-
-
-$conn =  mysqli_connect($host, $usuario, $senha, $database);
-if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
-}
-
-// Consulta para recuperar os produtos
-$sql = "SELECT nomeProduto, precoProduto, imgProduto FROM produto";
-
-
-$result = $conn->query($sql);
-
-// Verifica se há produtos
-if ($result->num_rows > 0) {
-    // Exibe os produtos
-    while($row = $result->fetch_assoc()) {
-        echo "<div id='produto-categoria_1'>";
-        echo "<div class='imagem_produto'>";
-        echo "<img src='" . $row['imgProduto'] . "' alt='" . $row['nomeProduto'] . "'>";
-        echo "</div>";
-        echo "<div class='infos_produto'>";
-        echo "<div class='nome_produt'>";
-        echo "<a class='product_name' href='product-page.php?nomeProduto=" . urlencode($row['nomeProduto']) . "'>" . $row['nomeProduto'] . "</a>";
-        echo "</div>";
-        echo "<div class='valor_produto'>";
-        echo "<span class='product_price'>R$" . $row['precoProduto'] . "</span>";
-        echo "</div>";
-        echo "</div>";
-        echo "</div>";
-    }
-} else {
-    echo "Nenhum produto encontrado.";
-}
-
-$conn->close();
-?>
-
-                    
-                   
-                   
-                </div>
-            </div>
-                   </div>
-        </div>
-        <div class="produtos_cards-1">
                 <span class="title-categoria">PRODUTOS</span>
                 <div class="categoria_1">
                 <?php

@@ -23,20 +23,20 @@
             </div>
             <div id="remove_product">
                 <span>Remover Produto</span>
-                <div class="function_button"><a href=""> <img src="./assets/remove-product-icon.svg" alt=""></a></div>
+                <div class="function_button"><a href="removerdb.php"> <img src="./assets/remove-product-icon.svg" alt=""></a></div>
             </div>
-            <div id="register_discount">
+           <!-- <div id="register_discount">
                 <span>Registrar desconto</span>
                 <div class="function_button"><a href="#"> <img src="./assets/discount-icon.svg" alt=""></a></div>
-            </div>
+            </div> -->
             <div id="generate_report">
                 <span>Gerar Relatório</span>
-                <div class="function_button"><a href="#"> <img src="./assets/generate-report-icon.svg" alt=""></a></div>
+                <div class="function_button"><a href="relatorio-produtos.php"> <img src="./assets/generate-report-icon.svg" alt=""></a></div>
             </div>
-            <div id="asses_stock">
+           <!-- <div id="asses_stock">
                 <span>Analisar Estoque</span>
                 <div class="function_button"><a href="#"> <img src="./assets/asses-stock-icon.svg" alt=""></a></div>
-            </div>
+            </div>-->
         </div>
     </div>
 </body>
